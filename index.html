@@ -254,6 +254,213 @@
                 padding-left: 300px;
                 padding-right: 300px;
             }
+
+            @media screen and (max-width: 600px) {
+                .logo {
+                    width: 30%;
+
+                    margin: 0px; 
+                    padding: 30px;
+                }
+
+                    nav {
+                    display: block;
+
+                    font-size: small;
+                }
+
+                a {
+                    color: white;
+
+                    text-decoration: none;
+
+                    animation-name: fadeColor-and-small;
+                    animation-delay: 0s;
+                    animation-duration: 0.5s;
+                    animation-fill-mode: both;
+                }
+
+                @keyframes fadeColor-and-small {
+                    from {
+                        color: #6B66C6;
+                        font-size: medium;
+                        font-weight: bolder;
+                    }
+
+                    to {
+                        color: white;
+                    }
+                }
+
+                a:hover {
+                    color: #6B66C6;
+
+                    animation-name: fadeColor-and-large;
+                    animation-delay: 0s;
+                    animation-duration: 0.5s;
+                    animation-fill-mode: both;
+                }
+
+                @keyframes fadeColor-and-large {
+                    from {
+                        color: white;
+                    }
+
+                    to {
+                        color: #6B66C6;
+                        font-size: medium;
+                        font-weight: bolder;
+                    }
+                }
+
+                .links {
+                    display: block;
+                    font-size: small;
+                }
+
+                input {
+                    display: block;
+                    justify-content: center;
+
+                    font-family: Lexend;
+                    font-size: small;
+                    font-weight: bolder;
+
+                    background-image: url(Img/Search\ Logo.png);
+                    background-color: rgba(255,255,255,0.5);
+                    background-repeat: no-repeat;
+                    background-size: 30px;
+
+                    width: 40%;
+                    margin-left: 25px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    padding-left: 40px;
+
+                    border: none;
+                    border-radius: 10px;
+                    outline: 0;
+
+                    animation-name: slideUp;
+                    animation-delay: 0s;
+                    animation-duration: 1s;
+                    animation-fill-mode: both;
+                }
+
+                @keyframes slideUp {
+                    from {
+                        padding-bottom: 100px;
+                    }
+
+                    to {
+                        padding-bottom: 10px;
+                    }
+                }
+
+                input:hover {
+                    display: block;
+                    justify-content: center;
+
+                    font-family: Lexend;
+                    font-size: small;
+                    font-weight: bolder;
+
+                    background-image: url(Img/Search\ Logo.png);
+                    background-color: rgba(255,255,255,0.5);
+                    background-repeat: no-repeat;
+                    background-size: 30px;
+
+                    width: 40%;
+                    margin-left: 25px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    padding-left: 40px;
+
+                    border: none;
+                    border-radius: 10px;
+                    outline: 0;
+
+                    animation-name: slideDown;
+                    animation-delay: 0s;
+                    animation-duration: 1s;
+                    animation-fill-mode: both;
+                }
+
+                @keyframes slideDown {
+                    from {
+                        padding-bottom: 10px;
+                    }
+
+                    to {
+                        padding-bottom: 100px;
+                    }
+                }
+
+                ::placeholder {
+                    color: black;
+                }
+
+                .light {
+                    width: 40%;
+
+                    margin-bottom: -8px;
+                    padding-top: 30px;
+                    padding-bottom: 0px;
+                }
+
+                .socials {
+                    display: flex;
+                    justify-content: center;
+
+                    background-color: rgba(0,0,0,0.5);
+                    backdrop-filter: blur(5px);
+                }
+
+                .socials-img {
+                    width: 30px;
+                    margin-right: 10px;
+
+                    animation-name: hoverDown;
+                    animation-delay: 0s;
+                    animation-duration: 0.5s;
+                    animation-fill-mode: both;
+                }
+
+                @keyframes hoverDown {
+                    from {
+                        transform: translateY(-5px);
+                    }
+
+                    to {
+                        transform: translateY(0px);
+                    }
+                }
+
+                .socials-img:hover {
+                    width: 40px;
+                    margin-right: 10px;
+
+                    animation-name: hoverUp;
+                    animation-delay: 0s;
+                    animation-duration: 0.5s;
+                    animation-fill-mode: both;
+                }
+
+                @keyframes hoverUp {
+                    from {
+                        transform: translateY(0px);
+                    }
+
+                    to {
+                        transform: translateY(-5px);
+                    }
+                }
+
+                footer {
+                    margin: 0px;
+                    padding: 10px;
+                }
+            }
         </style>
         <title>9Anime - Watch Anime Online!</title>
     </head>

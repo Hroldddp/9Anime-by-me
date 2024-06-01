@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
+
+            /* Font */
+
             @font-face {
                 font-family: Lexend;
                 src: url(Fonts/Lexend/static/Lexend-Regular.ttf);
@@ -16,6 +19,8 @@
 
                 margin: 0px;
                 padding: 0px;
+
+                user-select: none;
             }
 
             header {
@@ -30,12 +35,18 @@
                 padding: 0px;
             }
 
+            /* 9Anime Logo */
+
             .logo {
                 width: 15%;
 
                 margin: 0px; 
                 padding: 30px;
+
+                -webkit-user-drag: none;
             }
+
+            /* Links & animations */
 
             nav {
                 display: block;
@@ -105,6 +116,8 @@
                 display: block;
                 font-size: small;
             }
+
+            /* Search bar & animations */
 
             input {
                 display: block;
@@ -188,6 +201,8 @@
                 color: black;
             }
 
+            /* Light Yagami from Death Note */
+
             .light {
                 width: 15%;
 
@@ -195,6 +210,8 @@
                 padding-top: 30px;
                 padding-bottom: 0px;
             }
+
+            /* Social media accounts */
 
             .socials {
                 display: flex;
@@ -207,6 +224,8 @@
             .socials-img {
                 width: 50px;
                 margin-right: 30px;
+
+                -webkit-user-drag: none;
 
                 animation-name: hoverDown;
                 animation-delay: 0s;
@@ -244,6 +263,8 @@
                 }
             }
 
+            /* Website information */
+
             footer {
                 background-color: black;
                 color: #818589;
@@ -255,7 +276,9 @@
                 padding-right: 300px;
             }
 
-            @media screen and (max-width: 600px) {
+            /* Other devices */
+
+            @media screen and (max-width: 1200px) {
                 .logo {
                     width: 30%;
 
@@ -401,7 +424,7 @@
                 }
 
                 .light {
-                    width: 40%;
+                    width: 35%;
 
                     margin-bottom: -8px;
                     padding-top: 30px;
@@ -467,8 +490,14 @@
     <body>
         <header>
             <center>
+
+                <!-- Website Logo -->
+
                 <img class="logo" src="Img/9Anime Logo.png" alt="9Anime Logo">
                 <div class="links">
+
+                    <!-- Navigation bar -->
+
                     <nav>
                         <ul>
                             <a target=_blank href="home.html"><li>Home</li></a>
@@ -478,9 +507,18 @@
                         </ul>
                     </nav>
                 </div>
+
+                <!-- Search bar -->
+
                 <input type="search" placeholder="Search anime...">
+
+                <!-- Light Yagami from Death Note -->
+
                 <img class="light" src="Img/Light.png" alt="Light Yagami">
                 <nav class="socials">
+
+                    <!-- Social media logo + accounts -->
+
                     <ul>
                         <li><a target="_blank" href="discord.com"><img class="socials-img" src="Img/Socials/discord.png" alt="Discord"></a></li>
                         <li><a target="_blank" href="twitter.com"><img class="socials-img" src="Img/Socials/twitter.png" alt="Twitter"></a></li>
@@ -491,6 +529,9 @@
             </center>
         </header>
         <footer>
+
+            <!-- Website information -->
+
             <h1>Aniwave.to - Watch Anime Online for FREE</h1>
             <p>
                 Near the end of 2016, after checking popular free anime streaming sites, we found most sites lacked a good user interface 
@@ -540,7 +581,6 @@
                 <p>
                     Thanks!
                 </p>
-            </p>
         </footer>
     </body>
 </html>

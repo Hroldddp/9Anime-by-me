@@ -1,2 +1,3 @@
-# 9Anime by me
- shit looks bad
+# 9Anime designed by me
+- shit looks bad
+- animations & transitions run at page load
